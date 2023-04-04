@@ -50,6 +50,9 @@
         <h3 id="title2" align="left">【お問い合わせは、こちらのフォームからお願いします。】</h3>
         <form action="http://www2.tba.t-com.ne.jp/cgi-bin/form.cgi" method="post">
             <div class = "box">
+                件名(必須)：<textarea name = "subject" cols = "20"></textarea>
+            </div>
+            <div class = "box">
             お問合せ内容(必須)：<br>
             <textarea name = "opinion"rows = "8" cols = "50"></textarea>
             </div>
@@ -58,7 +61,6 @@
             </div>
             <div>
             <input type="hidden" name="tomail" value="utae.hijiri.8@gmail.com">
-            <input type="submit" name="tosubj" value="メールの件名">
             <input type = "submit"value = "送信">
             <input type = "reset"value = "取消">
             </div>

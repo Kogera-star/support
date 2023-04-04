@@ -44,16 +44,18 @@
         <a href="./lyrics.pdf" download="歌詞.pdf">歌詞PDFのダウンロード</a>
         <br>
         <h3 id="title2" align="left">【お問い合わせフォーム】</h3>
-        <p>
-        メールアドレス：<input type = "text"name = "yourname"
-        </p>
-        <p>
+        <form action = "cgi-bin/formsample.cgi"method = "post">
+            <p>
+            メールアドレス：<input type = "text" mail = "yourmail">
+            </p>
+            <p>
             <textarea name = "opinion"rows = "8" cols = "50"></textarea>
-        </p>
-        <p>
-        <input type = "submit"value = "送信">
-        <input type = "reset"value = "取消">
-        </p>
+            </p>
+            <p>
+            <input type = "submit"value = "送信">
+            <input type = "reset"value = "取消">
+            </p>
+        </form>
     </div> 
 </body>
 </html>

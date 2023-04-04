@@ -33,6 +33,9 @@
           margin-left:1em;
           float:left
         }
+        .box{
+          margin-bottom:15px;
+        }
     </style>
 </head>
 <body>
@@ -46,16 +49,17 @@
         <br>
         <h3 id="title2" align="left">【お問い合わせは、こちらのフォームからお願いします。】</h3>
         <form action = "cgi-bin/formsample.cgi"method = "post">
-            <p>
+            <div class = "box">
+            お問合せ内容：
             <textarea name = "opinion"rows = "8" cols = "70"></textarea>
-            </p>
-            <p>
+            </div>
+            <div class = "box">
             メールアドレス：<input type = "text" mail = "yourmail" cols = "40">
-            </p>
-            <p>
+            </div>
+            <div>
             <input type = "submit"value = "送信">
             <input type = "reset"value = "取消">
-            </p>
+            </div>
         </form>
     </div> 
 </body>

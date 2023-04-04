@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width = device-width,initial-scale = 1.0">
     <title>サポートページ</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="contact.js"></script>
     <style type="text/css">
         #title1{width:360px;text-decoration:none}
         #title2{width:600px;text-decoration:none}
@@ -25,23 +27,24 @@
         <br>
         <br>
         <h3 id="title2" align="left">【お問い合わせは、こちらのフォームからお願いします。】</h3>
-        <form action="http://www2.tba.t-com.ne.jp/cgi-bin/form.cgi" method="post">
-            <p class = "box">
+        <form action="confirm.php" method="post" name="form" onsubmit="return validate()">
+            <div class = "box">
                 件名(必須)：<br>
                 <textarea name = "件名" cols = "50"></textarea>
-            </p>
-            <p class = "box">
+            </div><br>
+            <div class = "box">
                 お問合せ内容(必須)：<br>
                 <textarea name = "お問合せ内容"rows = "8" cols = "50"></textarea>
-            </p>
-            <p class = "box">
+            </div><br>
+            <div class = "box">
                 メールアドレス(必須)：<input type = "text" name = "メールアドレス" cols = "50">
-            </p>
-            <p>
+            </div><br>
+            <div>
                <input type = "hidden" name = "tomail" value = "utae.hijiri.8@gmail.com">
                <input type = "submit"value = "送信">
                <input type = "reset"value = "取消">
-            </p>
+            </div>
+            <button type="submit">確認画面へ</button>
         </form>
     </div> 
 </body>
